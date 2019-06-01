@@ -17,7 +17,7 @@ namespace Xadrez_Console.Entities
 
         public override string ToString()
         {
-            return "R";
+            return "T";
         }
     }
 }
