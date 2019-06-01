@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Xadrez_Console.Entities
+﻿namespace Xadrez_Console.Entities
 {
     class Tabuleiro
     {
@@ -25,6 +21,11 @@ namespace Xadrez_Console.Entities
         {
             return Pecas[linha, coluna];
         }
-    }
 
+        public void ColocarPeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
+        }
+    }
 }

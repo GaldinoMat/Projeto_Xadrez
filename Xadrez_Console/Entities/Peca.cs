@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xadrez_Console.Entities.Enums;
+﻿using Xadrez_Console.Entities.Enums;
 
 namespace Xadrez_Console.Entities
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
@@ -16,14 +13,14 @@ namespace Xadrez_Console.Entities
         {
         }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tabuleiro)
+        public Peca(Cor cor, Tabuleiro tabuleiro)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tabuleiro = tabuleiro;
             QteMovimentos = 0;
         }
 
-        
+
     }
 }

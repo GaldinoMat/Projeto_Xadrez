@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Xadrez_Console.Entities
+﻿namespace Xadrez_Console.Entities
 {
     class Posicao
     {
